@@ -41,6 +41,7 @@ img {
     justify-content: center;
 
     width: 100%;
+    gap: 30px;
 }
 .main-content {
     display: flex;
@@ -48,162 +49,63 @@ img {
     align-items: center;
     justify-content: center;
 }
-.link-content img:nth-child(1) {
-    display: block;
+.link-content {
+    width: 100%;
 }
-.link-content img:nth-child(2) {
-    position: absolute;
-    top: 630px;
-    z-index: 1;
-} 
-.link-content img:nth-child(3) {
-    position: absolute;
-    top: 630px;
+.link-content img {
+    width: 100%;
 }
-.link-content img:nth-child(4) {
-    position: absolute;
-    top: 783px;
-    z-index: 2;
-}
-.link-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 610px;
 
-    z-index: 3;
-} 
-.link-icons {
-    cursor: pointer;
-} 
+@media only screen and (max-width: 912px) {
+    .content-text {
+        margin: 5px 30px;
+    }
+}
 
-@media only screen and (max-width: 1300px) {
-    .link-content img:nth-child(4) {
-        top: 765px;
+@media only screen and (max-width: 715px) {
+    .content-text p {
+        font-size: 22px;
     }
-}
-@media only screen and (max-width: 1100px) {
-    .link-content img:nth-child(4) {
-        top: 750px;
+    .link-icons a img {
+        max-width: 150px;
+        max-height: 150px;
     }
-}
-@media only screen and (max-width: 1000px) {
-    .link-content img:nth-child(4) {
-        top: 740px;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .link-content img:nth-child(4) {
-        top: 725px;
-    }
-}
-@media only screen and (max-width: 800px) {
-    .link-content img:nth-child(4) {
-        top: 715px;
-    }
-    .link-icons {
-        top: 540px;
-    }
-    .main-content p{
-        font-size: 20px;
-    }
-    .link-content img:nth-child(1) {
-        position: relative;
-        top: 88px;
-    }
-}
-@media only screen and (max-width: 750px) {
     h1 {
         font-size: 60px;
     }
 }
-@media only screen and (max-width: 700px) {
-    .link-icons {
-        top: 500px;
-    }
-    .link-content img:nth-child(4) {
-        top: 710px;
-    }
-    .main-content p{
-        width: 100%;
-    }
-    .content-text {
-        padding: 10px 10px;
+
+@media only screen and (max-width: 650px) {
+    .main-content {
+        gap: 40px;
     }
 }
-@media only screen and (max-width: 600px) {
-    .link-content img:nth-child(4) {
-        top: 695px;
-    }
-}
+
 @media only screen and (max-width: 550px) {
     h1 {
+        margin: 20px;
         text-align: center;
     }
-    .link-content img:nth-child(1) {
-        position: relative;
-        top: 72px;
+    .main-content {
+        gap: 60px;
     }
-    .link-content img:nth-child(4) {
-        top: 690px;
+    .link-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .main-content {
-        padding: 0px 10px;
+        gap: 35px;
     }
-}
-@media only screen and (max-width: 534px) {
     .content-text {
-        margin-top: 35px;
-    }
-    .link-icons {
-        top: 540px;
-    }
-    .link-content img:nth-child(1) {
-        top: 42px;
+        margin-top: 40px;
     }
 }
-@media only screen and (max-width: 526px) {
-    .link-content img:nth-child(1) {
-        top: 34x;
-    }
-    .link-icons {
-        flex-flow: wrap;
-        margin-top: 35px;
-    }
+
+@media only screen and (max-width: 450px) {
     .link-icons a img {
-        width: 100px;
-        height: 100px;
-    }
-    .link-content img:nth-child(1) {
-        top: 21px;
-    }
-}
-@media only screen and (max-width: 490px) {
-    .link-content img:nth-child(1) {
-        top: 80px;
-    }
-    .link-content img:nth-child(4) {
-        top: 680px;
-    }
-    .main-content p{
-        font-size: 16px;
-    }
-    .link-icons {
-        margin-top: 0px;
-    }
-}
-@media only screen and (max-width: 430px) {
-    .link-content img:nth-child(1) {
-        top: 70px;
-    }
-    .link-content img:nth-child(4) {
-        top: 675px;
-    }
-}
-@media only screen and (max-width: 410px) {
-    .link-content img:nth-child(1) {
-        top: 55px;
+        max-width: 140px;
+        max-height: 140px;
     }
 }
